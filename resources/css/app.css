@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- PURE BLACK & DARK BLUE AESTHETIC --- */
+
+/* 1. Main Backgrounds (Pure Black) */
+.dark body, .dark .min-h-screen, .dark main {
+    background-color: #000000 !important; /* Pure Black */
+    color: #e2e8f0 !important; /* Light Gray Text */
+}
+
+/* 2. Cards & Containers (Deepest Blue-Black) */
+.dark .bg-white, .dark .bg-gray-100, .dark .bg-gray-50, .dark aside {
+    background-color: #0b1120 !important; /* Very Dark Blue/Black */
+    color: #ffffff !important; /* Pure White Text */
+    border-color: #1e293b !important; /* Dark Blue Border */
+}
+
+/* 3. Inputs & Forms */
+.dark input, .dark select, .dark textarea {
+    background-color: #000000 !important; 
+    border-color: #334155 !important; 
+    color: #ffffff !important;
+}
+
+/* 4. Text Visibility Fixes (Crucial for Dashboard Numbers) */
+.dark .text-gray-900, .dark .text-gray-800, .dark .text-gray-700 {
+    color: #ffffff !important; /* Force black text to white */
+}
+.dark .text-gray-600, .dark .text-gray-500 {
+    color: #121212 !important; /* Light Blue-Gray */
+}
+
+/* 5. Tables */
+.dark tr:hover { background-color: #111827 !important; }
