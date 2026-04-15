@@ -22,3 +22,6 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+# Strict Cache Ignore for Vercel
+/bootstrap/cache/*.php
+/bootstrap/cache/*.json
