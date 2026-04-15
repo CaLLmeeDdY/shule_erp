@@ -21,8 +21,5 @@ COPY . .
 # Install Laravel dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Clear any cached configurations
-RUN php artisan optimize:clear
-
 # Start the Laravel server and bind it to Render's dynamic PORT
 CMD php artisan serve --host=0.0.0.0 --port=${PORT:-10000}
