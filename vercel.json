@@ -29,5 +29,4 @@
         "SESSION_DRIVER": "cookie",
         "VIEW_COMPILED_PATH": "/tmp"
     }
-    }
 }
